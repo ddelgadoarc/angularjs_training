@@ -9,7 +9,7 @@ angular.module('angularJsTrainingApp.login', ['ngRoute'])
         });
     }])
 
-    .controller('LoginCtrl', [function() {
+    .controller('LoginCtrl', [function($scope) {
 
 
     }]);
