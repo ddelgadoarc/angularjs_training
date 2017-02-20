@@ -1,10 +1,9 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+angular.module('angularJsTrainingApp', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
+  'angularJsTrainingApp.login',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
