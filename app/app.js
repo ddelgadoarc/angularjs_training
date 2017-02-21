@@ -1,13 +1,19 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('angularJsTrainingApp', [
-  'ngRoute',
-  'angularJsTrainingApp.login',
-  'myApp.version'
+angular.module('angTrainingApp', [
+    'ngRoute',
+    'angTrainingApp.newUser',
+    'angTrainingApp.listOfUsers',
+    'angTrainingApp.editUserProfile',
+    'angTrainingApp.profilePhotoComponent',
+    'angTrainingApp.userStaticItems',
+    'angTrainingApp.directive1',
+    'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
+    $locationProvider.hashPrefix('');
+
+    $routeProvider.otherwise({redirectTo: '/list-of-users'});
 }]);

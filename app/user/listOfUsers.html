@@ -1,0 +1,21 @@
+<div class="list-of-users-wrapper">
+
+    <h2> List of Users </h2>
+
+    <div>
+        <div class="list-of-users" ng-repeat=" value in users" ng-controller="ListOfUsersCtrl as ctrl">
+
+            <profile-photo hero="ctrl.hero"></profile-photo>
+
+            <h5> {{ value['name'] }} </h5>
+
+            <fieldset>
+                <user-static-items hero="Test"></user-static-items>
+            </fieldset>
+
+            <directive1 status="Active"> </directive1>
+
+        </div>
+    </div>
+
+</div>

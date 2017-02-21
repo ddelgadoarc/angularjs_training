@@ -23,3 +23,14 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+.list-of-users {
+  display: inline;
+  float: left;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+
+.list-of-users img {
+  margin: auto;
+}
