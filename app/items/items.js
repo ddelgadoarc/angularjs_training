@@ -13,8 +13,7 @@ angular.module('angularJsTrainingApp.items', ['ngRoute'])
 
         var that = this;
         this.latestBid = 0;
-
-        console.log(this.latestBid);
+        $scope.selectedUser = '';
 
         $scope.users = [
                 {
@@ -81,5 +80,9 @@ angular.module('angularJsTrainingApp.items', ['ngRoute'])
                     "gender": "female"
                 }
             ];
+
+            $scope.onUserSelect = function(user) {
+                $scope.selectedUser = user;
+            }
 
     }]);
