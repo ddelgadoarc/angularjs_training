@@ -9,6 +9,8 @@ angular.module('angTrainingApp', [
     'angTrainingApp.profilePhotoComponent',
     'angTrainingApp.userStaticItems',
     'angTrainingApp.directive1',
+    'angTrainingApp.service1',
+    'angTrainingApp.filter1',
     'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

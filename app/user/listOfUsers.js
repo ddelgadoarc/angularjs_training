@@ -9,7 +9,7 @@ angular.module('angTrainingApp.listOfUsers', ['ngRoute'])
         });
     }])
 
-    .controller('ListOfUsersCtrl', ['$scope', function($scope) {
+    .controller('ListOfUsersCtrl', ['$scope', 'notify', 'upperCaseFilter', function($scope , notify, upperCaseFilter) {
 
         this.imgLink = 'From Controller';
 
@@ -73,5 +73,11 @@ angular.module('angTrainingApp.listOfUsers', ['ngRoute'])
                 "name": "Move Right",
             }
         ];
+
+        //using service
+        $scope.onClickUsingService = function(name) {
+
+            notify(name);
+        }
 
     }]);
