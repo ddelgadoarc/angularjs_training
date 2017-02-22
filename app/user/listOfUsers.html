@@ -1,26 +1,12 @@
 <div class="list-of-users-wrapper">
 
-    <h2> List of Users </h2>
+    <h2> List of Email </h2>
 
     <div>
-        <div class="list-of-users" ng-repeat=" value in users" ng-controller="ListOfUsersCtrl as ctrl">
 
-            <profile-photo hero="ctrl.hero"></profile-photo>
+        <lists></lists>
+        <h1> {{ getList() }} </h1>
 
-            <h5> {{ value['name']|upperCase }} </h5>
-
-            <!--sample filter-->
-            <span> {{ value['balance'] | currency }} </span>
-
-            <button ng-click="onClickUsingService(value['name'])"> Sample Service (Click 3x) </button>
-
-            <fieldset>
-                <user-static-items hero="Test"></user-static-items>
-            </fieldset>
-
-            <directive1 status="Active"> </directive1>
-
-        </div>
     </div>
 
 </div>

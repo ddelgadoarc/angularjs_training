@@ -7,9 +7,13 @@ angular.module('angTrainingApp.listOfUsers', ['ngRoute'])
             templateUrl: 'user/listOfUsers.html',
             controller: 'ListOfUsersCtrl'
         });
+        $routeProvider.when('/list-of-users', {
+            templateUrl: 'user/listOfUsers.html',
+            controller: 'ListOfUsersCtrl'
+        });
     }])
 
-    .controller('ListOfUsersCtrl', ['$scope', 'notify', 'upperCaseFilter', function($scope , notify, upperCaseFilter) {
+    .controller('ListOfUsersCtrl', ['$scope', 'notify', 'upperCaseFilter', 'getlist', function($scope , notify, upperCaseFilter, getlist) {
 
         this.imgLink = 'From Controller';
 
@@ -78,6 +82,11 @@ angular.module('angTrainingApp.listOfUsers', ['ngRoute'])
         $scope.onClickUsingService = function(name) {
 
             notify(name);
+        }
+
+        $scope.getList = function() {
+
+            return getlist(1);
         }
 
     }]);

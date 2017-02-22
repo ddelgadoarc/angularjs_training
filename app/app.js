@@ -11,6 +11,8 @@ angular.module('angTrainingApp', [
     'angTrainingApp.directive1',
     'angTrainingApp.service1',
     'angTrainingApp.filter1',
+    'angTrainingApp.service2',
+    'angTrainingApp.lists',
     'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
