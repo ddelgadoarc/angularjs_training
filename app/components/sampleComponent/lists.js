@@ -6,10 +6,10 @@ angular.module('angTrainingApp.lists', [])
         templateUrl: 'components/sampleComponent/lists.html',
         controller: function GreetUserController($http, $scope) {
 
-            $scope.comments = '';
+            $scope.item = '';
 
-            $http.get('https://jsonplaceholder.typicode.com/comments').then(function(response) {
-                $scope.comments = response.data;
+            $http.get('https://randomuser.me/api/').then(function(response) {
+                $scope.item = response.data;
             });
         }
     });
