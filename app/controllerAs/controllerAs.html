@@ -1,0 +1,22 @@
+<div>
+
+    Controller As/Vm
+
+    <div ng-controller="controllerAsCtrl as ctrl1">
+
+        <button ng-click="ctrl1.emit('Emit')"> Emit in Controller 1 </button>
+
+        <div ng-controller="controllerAsCtrl2 as contAsCtrl2">
+
+            <button ng-click="contAsCtrl2.broadcast('broadcast')"> Broadcast in Controller 2 </button>
+
+        </div>
+
+        <div ng-controller="controllerAsCtrl3 as contAsCtrl3">
+            {{ contAsCtrl3.title }}
+        </div>
+
+
+    </div>
+
+</div>

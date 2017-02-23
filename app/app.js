@@ -12,6 +12,9 @@ angular.module('angTrainingApp', [
     'angTrainingApp.service1',
     'angTrainingApp.filter1',
     'angTrainingApp.service2',
+    'angTrainingApp.controllerAs',
+    'angTrainingApp.controllerAs2',
+    'angTrainingApp.controllerAs3',
     'angTrainingApp.lists',
     'myApp.version'
 ]).
